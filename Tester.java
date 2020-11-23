@@ -24,9 +24,12 @@ public class Tester{
     // System.out.println(num2.getNumerator());
     // System.out.println(num3.getNumerator());
 
-    RationalNumber num1recip = num1.reciprocal();
-    System.out.println(num1recip.getNumerator());
-    System.out.println(num1recip.getDenominator());
-  
+    // RationalNumber num1recip = num1.reciprocal();
+    // System.out.println(num1recip.getNumerator());
+    // System.out.println(num1recip.getDenominator());
+
+    RationalNumber num4 = new RationalNumber(2, 4);
+    System.out.println(num4.equals(num1));
+
   }
 }
