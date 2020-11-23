@@ -20,6 +20,7 @@ public class RationalNumber extends RealNumber
       numerator = nume;
       denominator = deno;
     }
+    reduce();
   }
 
   public double getValue(){
