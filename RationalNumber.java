@@ -92,8 +92,10 @@ public class RationalNumber extends RealNumber
   *This must be used to maintain that all RationalNumbers are
   *reduced after construction.
   */
-  private void reduce(){
-
+  private void reduce(){ //temporarily changed to public to test...
+    int gcd = gcd(numerator, denominator);
+    numerator = numerator / gcd;
+    denominator = denominator / gcd;
   }
   /******************Operations Return a new RationalNumber!!!!****************/
   /**

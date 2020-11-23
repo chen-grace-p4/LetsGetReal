@@ -8,9 +8,9 @@ public class Tester{
     // // System.out.println(num1.divide(num2));
     // System.out.println(num1.subtract(num2));
 
-    RationalNumber num1 = new RationalNumber(2, 3);
-    RationalNumber num2 = new RationalNumber(2, 0);
-    RationalNumber num3 = new RationalNumber(2, -1);
+    // RationalNumber num1 = new RationalNumber(2, 3);
+    // RationalNumber num2 = new RationalNumber(2, 0);
+    // RationalNumber num3 = new RationalNumber(2, -1);
 
     // System.out.println(num1.getValue());
     // System.out.println(num2.getValue());
@@ -36,7 +36,16 @@ public class Tester{
     // System.out.println(num3);
 
     //temporarily changed gcd to public
-    System.out.println(RationalNumber.gcd(45, 210));
+    // System.out.println(RationalNumber.gcd(45, 210));
+
+    //temporaily changed reduce to public
+    RationalNumber num1 = new RationalNumber(10, 5);
+    System.out.println(num1.getNumerator());
+    System.out.println(num1.getDenominator());
+    num1.reduce();
+    System.out.println("After reducing...");
+    System.out.println(num1.getNumerator());
+    System.out.println(num1.getDenominator());
 
   }
 }
