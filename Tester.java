@@ -31,9 +31,12 @@ public class Tester{
     // RationalNumber num4 = new RationalNumber(2, 4);
     // System.out.println(num4.equals(num1));
 
-    System.out.println(num1);
-    System.out.println(num2.toString());
-    System.out.println(num3);
+    // System.out.println(num1);
+    // System.out.println(num2.toString());
+    // System.out.println(num3);
+
+    //temporarily changed gcd to public
+    System.out.println(RationalNumber.gcd(45, 210));
 
   }
 }
