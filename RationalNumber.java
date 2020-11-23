@@ -10,6 +10,17 @@ public class RationalNumber extends RealNumber
   */
   public RationalNumber(int nume, int deno){
     super(0.0);//this value is ignored!
+    if (deno == 0) {
+      numerator = 0;
+      denominator = 1;
+    } else if (deno < 0) {
+      numerator = -nume;
+      denominator = -deno;
+    } else {
+      numerator = nume;
+      denominator = deno;
+    }
+
   }
 
   public double getValue(){
@@ -96,4 +107,4 @@ public class RationalNumber extends RealNumber
   public RationalNumber subtract(RationalNumber other){
     return null;
   }
-} 
+}
