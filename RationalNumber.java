@@ -102,14 +102,21 @@ public class RationalNumber extends RealNumber
   *Return a new RationalNumber that is the product of this and the other
   */
   public RationalNumber multiply(RationalNumber other){
-    return null;
+    int numvalue = this.getNumerator() * other.getNumerator();
+    int denvalue = this.getDenominator() * other.getDenominator();
+    RationalNumber retvalue = new RationalNumber(numvalue, denvalue);
+    return retvalue;
   }
 
   /**
   *Return a new RationalNumber that is the this divided by the other
   */
   public RationalNumber divide(RationalNumber other){
-    return null;
+    other = other.reciprocal();
+    int numvalue = this.getNumerator() * other.getNumerator();
+    int denvalue = this.getDenominator() * other.getDenominator();
+    RationalNumber retvalue = new RationalNumber(numvalue, denvalue);
+    return retvalue;
   }
 
   /**

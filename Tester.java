@@ -39,13 +39,18 @@ public class Tester{
     // System.out.println(RationalNumber.gcd(45, 210));
 
     //temporaily changed reduce to public
-    RationalNumber num1 = new RationalNumber(10, 5);
-    System.out.println(num1.getNumerator());
-    System.out.println(num1.getDenominator());
-    num1.reduce();
-    System.out.println("After reducing...");
-    System.out.println(num1.getNumerator());
-    System.out.println(num1.getDenominator());
+    // RationalNumber num1 = new RationalNumber(10, 5);
+    // System.out.println(num1.getNumerator());
+    // System.out.println(num1.getDenominator());
+    // num1.reduce();
+    // System.out.println("After reducing...");
+    // System.out.println(num1.getNumerator());
+    // System.out.println(num1.getDenominator());
+
+    RationalNumber num1 = new RationalNumber(100, 5);
+    RationalNumber num2 = new RationalNumber(4, 1);
+    // System.out.println(num1.multiply(num2));
+    System.out.println(num1.divide(num2));
 
   }
 }
