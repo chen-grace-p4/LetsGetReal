@@ -33,8 +33,8 @@ public class RealNumber{
   public RealNumber add(RealNumber other){
      //other can be ANY RealNumber, including a RationalNumber
      //or other subclasses of RealNumber (that aren't written yet)
-     RealNumber retvalue = new RealNumber (this.getValue() + other.getValue());
-     return retvalue;
+   RealNumber retvalue = new RealNumber (this.getValue() + other.getValue());
+   return retvalue;
   }
 
   /*
@@ -42,7 +42,8 @@ public class RealNumber{
   *the product of this and the other
   */
   public RealNumber multiply(RealNumber other){
-        return null;
+    RealNumber retvalue = new RealNumber (this.getValue() * other.getValue());
+    return retvalue;
   }
 
   /*
