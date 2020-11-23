@@ -16,13 +16,17 @@ public class Tester{
     // System.out.println(num2.getValue());
     // System.out.println(num3.getValue());
 
-    System.out.println(num1.getDenominator());
-    System.out.println(num2.getDenominator());
-    System.out.println(num3.getDenominator());
+    // System.out.println(num1.getDenominator());
+    // System.out.println(num2.getDenominator());
+    // System.out.println(num3.getDenominator());
+    //
+    // System.out.println(num1.getNumerator());
+    // System.out.println(num2.getNumerator());
+    // System.out.println(num3.getNumerator());
 
-    System.out.println(num1.getNumerator());
-    System.out.println(num2.getNumerator());
-    System.out.println(num3.getNumerator());
-
+    RationalNumber num1recip = num1.reciprocal();
+    System.out.println(num1recip.getNumerator());
+    System.out.println(num1recip.getDenominator());
+  
   }
 }
