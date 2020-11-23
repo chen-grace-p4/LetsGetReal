@@ -12,8 +12,17 @@ public class Tester{
     RationalNumber num2 = new RationalNumber(2, 0);
     RationalNumber num3 = new RationalNumber(2, -1);
 
-    System.out.println(num1.getValue());
-    System.out.println(num2.getValue());
-    System.out.println(num3.getValue());
+    // System.out.println(num1.getValue());
+    // System.out.println(num2.getValue());
+    // System.out.println(num3.getValue());
+
+    System.out.println(num1.getDenominator());
+    System.out.println(num2.getDenominator());
+    System.out.println(num3.getDenominator());
+
+    System.out.println(num1.getNumerator());
+    System.out.println(num2.getNumerator());
+    System.out.println(num3.getNumerator());
+
   }
 }
