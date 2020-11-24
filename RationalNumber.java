@@ -140,6 +140,16 @@ public class RationalNumber extends RealNumber
   *Return a new RationalNumber that this minus the other
   */
   public RationalNumber subtract(RationalNumber other){
-    return null;
+    int numvalue;
+    int denvalue;
+    if (this.getDenominator() != other.getDenominator()) {
+      numvalue = this.getNumerator() * other.getDenominator() - other.getNumerator() * this.getDenominator();
+      denvalue = this.getDenominator()*other.getDenominator();
+    } else {
+      numvalue = this.getNumerator() - other.getNumerator();
+      denvalue = this.getDenominator();
+    }
+    RationalNumber retvalue = new RationalNumber(numvalue, denvalue);
+    return retvalue;
   }
 }
