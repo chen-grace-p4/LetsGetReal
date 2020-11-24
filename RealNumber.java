@@ -22,8 +22,9 @@ public class RealNumber{
     if (this.getValue() == 0.0 && other.getValue() == 0.0) {
       return true;
     }
-    double difference = Math.abs(this.getValue() - other.getValue()) / this.getValue();
-    return difference <= 0.000001;
+    double difference1 = Math.abs(this.getValue() - other.getValue()) / this.getValue();
+    double difference2 = Math.abs(this.getValue() - other.getValue()) / other.getValue();
+    return difference1 <= 0.000001 && difference2 <= 0.000001;
   }
 
   /*
