@@ -52,9 +52,13 @@ public class Tester{
     // // System.out.println(num1.multiply(num2));
     // System.out.println(num1.divide(num2));
 
-    RationalNumber num1 = new RationalNumber(100, 5);
-    System.out.println(num1.getNumerator());
-    System.out.println(num1.getDenominator());
+    // RationalNumber num1 = new RationalNumber(100, 5);
+    // System.out.println(num1.getNumerator());
+    // System.out.println(num1.getDenominator());
+
+    RationalNumber num1 = new RationalNumber(15, 100);
+    RationalNumber num2 = new RationalNumber(5, 100);
+    System.out.println(num1.add(num2));
 
   }
 }
