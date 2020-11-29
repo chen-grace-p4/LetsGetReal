@@ -64,11 +64,16 @@ public class Tester{
     // System.out.println(num1.subtract(num2));
 
     //NEW TESTING WITH NUMBER ABSTRACT CLASS
-    RealNumber num1 = new RealNumber(100);
-    RationalNumber num2 = new RationalNumber(200, 2);
-    RationalNumber num3 = new RationalNumber(400, 4);
-    System.out.println(num1.equals(num2));
-    System.out.println(num2.equals(num3));
+    // RealNumber num1 = new RealNumber(100);
+    // RationalNumber num2 = new RationalNumber(200, 2);
+    // RationalNumber num3 = new RationalNumber(400, 4);
+    // System.out.println(num1.equals(num2));
+    // System.out.println(num2.equals(num3));
+
+    RationalNumber num1 = new RationalNumber(0, 100);
+    RationalNumber num2 = new RationalNumber(100, 1);
+    System.out.println(num1);
+    System.out.println(num2);
 
   }
 }
