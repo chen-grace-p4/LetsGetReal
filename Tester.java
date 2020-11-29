@@ -72,8 +72,13 @@ public class Tester{
 
     RationalNumber num1 = new RationalNumber(0, 100);
     RationalNumber num2 = new RationalNumber(100, 1);
-    System.out.println(num1);
-    System.out.println(num2);
+    RationalNumber num3 = new RationalNumber(10, 5);
+    RealNumber num4 = new RealNumber(2);
+    // System.out.println(num1);
+    // System.out.println(num2);
+    System.out.println(num1.compareTo(num2));
+    System.out.println(num3.compareTo(num4));
+    System.out.println(num2.compareTo(num1));
 
   }
 }
