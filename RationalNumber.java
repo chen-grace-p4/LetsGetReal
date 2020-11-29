@@ -48,9 +48,10 @@ public class RationalNumber extends Number{
   /**
   *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
   */
-  public boolean equals(RationalNumber other){
-    return this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator();
-  }
+  //MOVED TO NUMBER ABSTRACT CLASS
+  // public boolean equals(RationalNumber other){
+  //   return this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator();
+  // }
 
 
   /**

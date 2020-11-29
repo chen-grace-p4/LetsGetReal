@@ -7,6 +7,7 @@ public abstract class Number{
   */
   public int compareTo(Number other){
     //TO BE IMPLEMENTED
+    return 0;
   }
 
   /*
@@ -15,5 +16,11 @@ public abstract class Number{
   *Special case: if one is exactly zero, the other must be exactly zero.
   */
   public boolean equals(Number other){
-    //TO BE IMPLEMENTED  }
+    if (this.getValue() == 0.0 && other.getValue() == 0.0) {
+      return true;
+    }
+    double difference1 = Math.abs(this.getValue() - other.getValue()) / this.getValue();
+    double difference2 = Math.abs(this.getValue() - other.getValue()) / other.getValue();
+    return difference1 <= 0.000001 && difference2 <= 0.000001;
+  }
 }

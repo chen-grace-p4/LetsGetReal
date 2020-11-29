@@ -18,14 +18,15 @@ public class RealNumber extends Number{
   *Return true when the values are within 0.001% of eachother.
   *Special case: if one is exactly zero, the other must be exactly zero.
   */
-  public boolean equals(RealNumber other){
-    if (this.getValue() == 0.0 && other.getValue() == 0.0) {
-      return true;
-    }
-    double difference1 = Math.abs(this.getValue() - other.getValue()) / this.getValue();
-    double difference2 = Math.abs(this.getValue() - other.getValue()) / other.getValue();
-    return difference1 <= 0.000001 && difference2 <= 0.000001;
-  }
+  //MOVED TO NUMBER CLASS
+  // public boolean equals(RealNumber other){
+  //   if (this.getValue() == 0.0 && other.getValue() == 0.0) {
+  //     return true;
+  //   }
+  //   double difference1 = Math.abs(this.getValue() - other.getValue()) / this.getValue();
+  //   double difference2 = Math.abs(this.getValue() - other.getValue()) / other.getValue();
+  //   return difference1 <= 0.000001 && difference2 <= 0.000001;
+  // }
 
   /*
   *Return a new RealNumber that has the value of:

@@ -58,10 +58,17 @@ public class Tester{
 
     // RationalNumber num1 = new RationalNumber(15, 100);
     // RationalNumber num2 = new RationalNumber(5, 100);
-    RationalNumber num1 = new RationalNumber(5, 2);
-    RationalNumber num2 = new RationalNumber(2, 3);
+    // RationalNumber num1 = new RationalNumber(5, 2);
+    // RationalNumber num2 = new RationalNumber(2, 3);
     // System.out.println(num1.add(num2));
-    System.out.println(num1.subtract(num2));
+    // System.out.println(num1.subtract(num2));
+
+    //NEW TESTING WITH NUMBER ABSTRACT CLASS
+    RealNumber num1 = new RealNumber(100);
+    RationalNumber num2 = new RationalNumber(200, 2);
+    RationalNumber num3 = new RationalNumber(400, 4);
+    System.out.println(num1.equals(num2));
+    System.out.println(num2.equals(num3));
 
   }
 }
