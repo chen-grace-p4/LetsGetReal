@@ -1,5 +1,4 @@
-public class RationalNumber extends RealNumber
-{
+public class RationalNumber extends Number{
   private int numerator, denominator;
 
   /**Initialize the RationalNumber with the provided values
@@ -74,7 +73,7 @@ public class RationalNumber extends RealNumber
     } else if (b == 0 & a != 0) {
       return a;
     }
-    
+
     int max;
     int min;
     if (a > b) {
